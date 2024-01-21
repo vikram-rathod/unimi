@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    Material toggle button Account Fragment-->
+
+    <color name="selected_button_color">#C0D8EC</color>
+    <color name="unselected_button_color">#A6BCCD</color>
+
+    <!--    //Kyc-->
+    <color name="selected_step_color">#C0D8EC</color>
+    <color name="default_step_color">#FFFFFFFF</color>
+    <color name="completed_step_color">#A4CBEA</color>
+
+
+</resources>

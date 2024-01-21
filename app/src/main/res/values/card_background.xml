@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="card_background">#F5F5F5</color>
+    <color name="border_color">#CCCCCC</color>
+    <dimen name="border_width">2dp</dimen>
+</resources>

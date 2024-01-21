@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/basic_details_kyc"
+        android:title="Basic Details" />
+
+    <item android:id="@+id/other_details_kyc"
+        android:title="Other Details" />
+
+    <item android:id="@+id/address_details_kyc"
+        android:title="Address Details" />
+
+<item android:id="@+id/identity_details_kyc"
+        android:title="Identity Details" />
+
+</menu>

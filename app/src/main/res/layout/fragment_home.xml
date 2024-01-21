@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Our mission is serve to you fresh original and natural quality nutrition beneficaila products for your daily needs."
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/bannerLayout"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_width="320dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="320dp">
+
+                    <com.unimi.unimiapp.utility.CustomImageSlider
+                        android:id="@+id/customImageSlider"
+                        android:layout_width="wrap_content"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+<!--       natural and premium products -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/b1"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/b2"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/b3"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+<!--            get pure-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/b7"
+                android:layout_marginTop="10dp"
+                />
+<!--            vertical products(milks,ghee and eggs-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoriesImageRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:src="@drawable/b8"
+                android:layout_marginTop="10dp"
+                />
+<!--            health and parent club-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/b9"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                        android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/b10"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/card_back"
+                    android:paddingBottom="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/e6" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Follow Unimi on ."
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#c76ce3"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/facebook"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingStart="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/instagram"
+                            android:paddingLeft="10dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingStart="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/youtube"
+                            android:paddingLeft="10dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingStart="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/whatapp"
+                            android:paddingLeft="10dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:paddingStart="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/business"
+                            android:paddingLeft="10dp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umini Care."
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#c76ce3"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Toll free.: 180-102-4774"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Support:080-771-7718"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Whatsapp:080-771-7718"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email: care@umimi.in"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

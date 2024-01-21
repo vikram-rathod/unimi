@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_sms"
+        android:icon="@drawable/sms"
+
+
+        android:title="SMS" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/user"
+
+        android:title="Account" />
+
+    <item
+        android:id="@+id/nav_blog"
+        android:icon="@drawable/blog"
+
+        android:title="Blog" />
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/more"
+
+        android:title="More" />
+
+</menu>

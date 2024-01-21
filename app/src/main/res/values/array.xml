@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="document_names">
+        <item>Aadhar Card</item>
+        <item>Passport</item>
+        <item>PanCard</item>
+        <item>Driving Licence</item>
+    </string-array>
+</resources>

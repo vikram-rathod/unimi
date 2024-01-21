@@ -1,0 +1,132 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_stepper"
+    app:startDestination="@id/basic_details_kyc">
+
+    <fragment
+        android:id="@+id/basic_details_kyc"
+        android:name="com.unimi.unimiapp.fragments.BasicDetailsFragment"
+        android:label="Step 1" />
+
+    <fragment
+        android:id="@+id/address_details_kyc"
+        android:name="com.unimi.unimiapp.fragments.AddressDetailsFragment"
+        android:label="Step 2" />
+
+    <!--   other details -->
+
+    <!--    identity Details-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identity Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+
+            android:textColor="@color/white"
+            android:background="#3D9340"
+            android:gravity="center"
+            />
+        <!--       gov id name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:text="GOVT. ID DOCUMENT NAME : "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AADHAR CARD"
+                android:gravity="end"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+
+                />
+        </LinearLayout>
+        <!--        gov id number-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:text="GOVT. ID DOCUMENT NUMBER : "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="601202541201"
+                android:gravity="end"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:text="UPLOAD GOVT ID DOCUMENT PHOTO "
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/aadharFront"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:paddingStart="8dp"
+
+                    android:contentDescription="@string/image_is_not_uploaded"
+                    android:paddingLeft="8dp"
+                    />
+                <ImageView
+                    android:id="@+id/aadharBack"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:paddingStart="8dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="@string/image_is_not_uploaded"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</navigation>
+
+
